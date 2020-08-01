@@ -64,33 +64,33 @@ SELECT *
 FROM role;
 
 INSERT into employee
-    (first_name, last_name, role_id)
+    (first_name, last_name, role_id, manager_id)
 values
-    ("Paul", "McCartney", 1);
+    ("Paul", "McCartney", 1, null);
 INSERT into employee
-    (first_name, last_name, role_id)
+    (first_name, last_name, role_id, manager_id)
 values
-    ("John", "Lennon", 2);
+    ("John", "Lennon", 2, null);
 INSERT into employee
-    (first_name, last_name, role_id)
+    (first_name, last_name, role_id, manager_id)
 values
-    ("George", "Harrison", 3);
+    ("George", "Harrison", 3, null);
 INSERT into employee
-    (first_name, last_name, role_id)
+    (first_name, last_name, role_id, manager_id)
 values
-    ("George", "Martin", 4);
+    ("Georgie", "Martin", 4, 3);
 INSERT into employee
-    (first_name, last_name, role_id)
+    (first_name, last_name, role_id, manager_id)
 values
-    ("Billy", "Preston", 5);
+    ("Billy", "Preston", 5, 3);
 INSERT into employee
-    (first_name, last_name, role_id)
+    (first_name, last_name, role_id, manager_id)
 values
-    ("Ringo", "Starr", 6);
+    ("Ringo", "Starr", 6, null);
 INSERT into employee
-    (first_name, last_name, role_id)
+    (first_name, last_name, role_id, manager_id)
 values
-    ("Geoff", "Emerick", 6);
+    ("Geoff", "Emerick", 6, 4);
 
 SELECT *
 FROM employee;
